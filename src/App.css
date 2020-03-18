@@ -20,6 +20,27 @@ button{
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
 }
+.new-user{
+  margin:30px 0 0 0;
+  border: 1px solid gray;
+  padding: 10px;
+}
+.new-user input{
+
+  width: 150px;
+  height: 40px;
+  font-size: 1rem;;
+  padding: 10px;
+  box-sizing: border-box;
+}
+.new-user button{
+  width: 150px;
+  height: 40px;
+
+}
+li{
+  text-align: left;
+}
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {

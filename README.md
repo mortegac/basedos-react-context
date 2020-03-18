@@ -1,4 +1,4 @@
-## Taller Reacjs - Fundamentos
+## Taller Reactjs Hooks - Context API
 
 # Configuración
 .- Instalar  [Nodejs versión LTS](https://nodejs.org/es/)

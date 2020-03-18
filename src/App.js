@@ -12,13 +12,15 @@ class App extends Component {
   };
 
   toggleTheme = () => {
+    const {theme} = this.state;
+
       this.setState({
-        theme: this.state.theme === themes.dark ? themes.light : themes.dark
+        theme: theme === themes.dark ? themes.light : themes.dark
       });
   };
 
   render(){
-    const {theme} = this.state;
+    const {theme, theme:{background}, theme:{color} } = this.state;
     return (
       <>
         <ThemeContext.Provider value={theme}>
@@ -27,8 +29,8 @@ class App extends Component {
                   <header 
                     className="App-header"
                     style={{
-                      backgroundColor: this.state.theme.background,
-                      color: this.state.theme.color
+                      backgroundColor: background,
+                      color: color
                     }}
                   
                   >
@@ -39,8 +41,8 @@ class App extends Component {
                     <button 
                       onClick={this.toggleTheme}
                       style={{ 
-                          backgroundColor: this.state.theme.background,
-                          color: this.state.theme.color
+                          backgroundColor: background,
+                          color: theme.color
                         }}
                     >Cambiar tema</button>
 
